@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --Font-size: 15px;
+  --Font-family: "Poppins", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  border: none;
+}
+body {
+  font-family: var(--Font-family);
+}
+main {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: var(--Very-Light-Gray);
+}
+/* header style start */
+header {
+  width: 45%;
+  margin: auto;
+  margin-top: 50px;
+  min-width: 390px;
+}
+header h2 {
+  font-weight: 200;
+  text-align: center;
+  color: var(--Grayish-Blue);
+}
+header h1 {
+  text-align: center;
+  color: var(--Very-Dark-Blue);
+}
+header p {
+  text-align: center;
+  color: var(--Grayish-Blue);
+}
+/* header style end */
+/* section articles style start */
+section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 9px;
+  margin-top: 50px;
+  align-items: center;
+}
+section article {
+  width: 33.33%;
+  min-width: 360px;
+}
+section article div {
+  margin: 20px;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+section article div h3 {
+  color: var(--Very-Dark-Blue);
+}
+section article div p {
+  color: var(--Grayish-Blue);
+}
+section article div img {
+  width: 80px;
+  margin-top: 30px;
+  align-self: end;
+}
+/* section articles style end */
+/* border card style start */
+.border-light-blue {
+  border-top: 4px solid var(--Cyan);
+}
+.border-red {
+  border-top: 4px solid var(--Red);
+}
+.border-yellow {
+  border-top: 4px solid var(--Orange);
+}
+.border-dark-blue {
+  border-top: 4px solid var(--Blue);
+}
+/* border card style end */
+footer{
+  text-align: center;
+}
+/* media screen style start */
+@media only screen and (max-width: 819px) {
+  section article {
+    width: 100%;
+  }
+}
+/* media screen style start */
