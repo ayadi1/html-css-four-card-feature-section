@@ -68,6 +68,7 @@ section article div {
   display: flex;
   flex-direction: column;
   border-radius: 5px;
+  box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
 }
 section article div h3 {
   color: var(--Very-Dark-Blue);
