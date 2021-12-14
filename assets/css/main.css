@@ -19,6 +19,8 @@
 }
 body {
   font-family: var(--Font-family);
+  max-width: 1440px;
+  margin: 0 auto;
 }
 main {
   width: 90%;
@@ -28,40 +30,41 @@ main {
   flex-wrap: wrap;
   background-color: var(--Very-Light-Gray);
 }
-/* header style start */
-header {
+/* .title style start */
+.title {
   width: 45%;
   margin: auto;
   margin-top: 50px;
   min-width: 390px;
 }
-header h2 {
-  font-weight: 200;
-  text-align: center;
-  color: var(--Grayish-Blue);
-}
-header h1 {
+.title h1 {
   text-align: center;
   color: var(--Very-Dark-Blue);
+  max-width: 405px;
+  margin: auto;
 }
-header p {
+.title h1 span {
+  font-weight: 200;
+  color: var(--Grayish-Blue);
+}
+.title p {
   text-align: center;
   color: var(--Grayish-Blue);
 }
-/* header style end */
-/* section articles style start */
-section {
+/* .title style end */
+/* section .articles style start */
+.section {
   display: flex;
   flex-wrap: wrap;
   padding: 0 9px;
   margin-top: 50px;
   align-items: center;
 }
-section article {
+.section .article {
   width: 33.33%;
   min-width: 360px;
 }
-section article div {
+.section .article div {
   margin: 20px;
   background-color: white;
   padding: 20px;
@@ -70,18 +73,18 @@ section article div {
   border-radius: 5px;
   box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
 }
-section article div h3 {
+.section .article div h3 {
   color: var(--Very-Dark-Blue);
 }
-section article div p {
+.section .article div p {
   color: var(--Grayish-Blue);
 }
-section article div img {
+.section .article div img {
   width: 80px;
   margin-top: 30px;
   align-self: end;
 }
-/* section articles style end */
+/* .section .articles style end */
 /* border card style start */
 .border-light-blue {
   border-top: 4px solid var(--Cyan);
@@ -101,7 +104,7 @@ footer{
 }
 /* media screen style start */
 @media only screen and (max-width: 819px) {
-  section article {
+  .section .article {
     width: 100%;
   }
 }
